@@ -1,5 +1,7 @@
 <template>
   <section>
-    <p>This page will be displayed at the /about route.</p>
+    <p class="text-pink bg-pink">
+      This page will be displayd at the /about route.
+    </p>
   </section>
 </template>

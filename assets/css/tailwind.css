@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .btn {
+    @apply bg-[#E21A43] text-[#fff] p-2;
+  }
+}

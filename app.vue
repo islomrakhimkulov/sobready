@@ -1,6 +1,26 @@
-<script setup>
-definePageMeta({
-  title: "My home page",
+<script setup lang="ts">
+useHead({
+  title: "Sob Ready",
+  meta: [
+    {
+      name: "description",
+      content:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+    },
+  ],
+  bodyAttrs: {
+    class: "test",
+  },
+});
+
+useServerSeoMeta({
+  title: "Sob Ready !!!",
+  ogTitle: "Fresh Product Directly To Your Door With Free Delivery",
+  description:
+    "There are many variations of passage Lorem Ipsum available, but te majority hav suffered alteration in some form, by injected humour",
+  ogDescription: "Make your online shop sob ready with our mobile all",
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
 });
 </script>
 
@@ -9,13 +29,7 @@ definePageMeta({
     <NuxtLayout>
       <div>Some default layout shared across all pages</div>
       <NuxtPage />
-      <nav>
-        <ul>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/posts/1">Post 1</NuxtLink></li>
-          <li><NuxtLink to="/posts/2">Post 2</NuxtLink></li>
-        </ul>
-      </nav>
+      <AppNavbar />
     </NuxtLayout>
   </div>
 </template>

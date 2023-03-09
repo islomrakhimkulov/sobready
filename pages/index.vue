@@ -1,7 +1,5 @@
 <script setup>
-definePageMeta({
-  title: "My home page",
-});
+const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>

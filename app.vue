@@ -25,11 +25,16 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <div>
+  <div class="container mx-auto">
     <NuxtLayout>
-      <div>Some default layout shared across all pages</div>
-      <NuxtPage />
       <AppNavbar />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+.router-link-active .router-link-exact-active {
+  color: #e21a43 !important;
+}
+</style>

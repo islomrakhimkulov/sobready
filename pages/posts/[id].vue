@@ -1,11 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  id: {
-    type: Number,
-  },
-});
+const { id } = useRoute().params;
 </script>
 
 <template>
-  <div>Post id: {{ props.id }}</div>
+  <div>Post id: {{ id }}</div>
 </template>

@@ -1,9 +1,7 @@
-<script setup>
-const runtimeConfig = useRuntimeConfig();
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="container mx-auto">
     <h1>Welcome to the homepage</h1>
     <AppAlert> This is an auto-imported component </AppAlert>
   </div>
